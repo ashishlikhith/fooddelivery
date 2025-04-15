@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodExpress - Food Delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">FoodExpress</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search for restaurants or cuisines...">
+        <button id="search-btn">Search</button>
+        <button id="ai-search-btn">AI Search by Cuisine</button>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn" data-cuisine="all">All</button>
+        <button class="filter-btn" data-cuisine="indian">Indian</button>
+        <button class="filter-btn" data-cuisine="chinese">Chinese</button>
+        <button class="filter-btn" data-cuisine="italian">Italian</button>
+        <!-- More cuisine filters -->
+    </div>
+
+    <main class="restaurant-list">
+        <!-- Restaurants will be dynamically added here -->
+    </main>
+
+    <script src="js/script.js"></script>
+
+    
+</body>
+</html>
